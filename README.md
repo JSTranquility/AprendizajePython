@@ -71,6 +71,8 @@ python
 
 - `modulos/11_apis_entornos_paquetes.md`
 - `modulos/12_siguiente_nivel.md`
+- `modulos/13_mysql_python.md`
+- `modulos/14_sqlite_python.md`
 
 ## Habitos importantes
 
