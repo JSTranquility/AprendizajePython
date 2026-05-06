@@ -1,4 +1,4 @@
-from datos import usuarios
+from aprendizaje.EntrenamientoDespuesDelCurso.RestauranteMenu.datos import usuarios
 
 menu_restaurante_dict = {
     1: "Pizza",
