@@ -160,6 +160,11 @@ def insertar_categorias():
 
 
 def ver_libros():
+    libros = consultar_libros()
+    for libro in libros:
+        print(dict(libro))
+
+def consultar_libros():
     conexion = obtener_conexion()
     cursor = conexion.cursor()
 
@@ -172,11 +177,8 @@ def ver_libros():
         JOIN categorias ON libros.categoria_id = categorias.id
     ''')
     libros = cursor.fetchall()
-
-    for libro in libros:
-        print(dict(libro))
-
     conexion.close()
+    return libros
 
 def insertar_libros():
         libros = {
