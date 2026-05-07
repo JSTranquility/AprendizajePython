@@ -28,7 +28,7 @@ Ejercicios y miniaplicaciones creadas fuera del recorrido principal del curso.
 Contenido enfocado en temas concretos.
 
 - `especializaciones/sqlite/`: fundamentos, practicas y bases de datos
-- `especializaciones/roadmaps/`: rutas secundarias como Tkinter y machine learning
+- `especializaciones/roadmaps/`: rutas secundarias como Tkinter, Machine Learning y Flask
 
 ### `tools/`
 
@@ -72,4 +72,4 @@ python especializaciones/sqlite/practicas/tienda_gaming/main.py
 2. Resuelve `curso/ejercicios/` en orden.
 3. Pasa a `curso/proyectos/`.
 4. Usa `practicas/` para experimentar.
-5. Entra en `especializaciones/` cuando quieras profundizar en SQLite, Tkinter o machine learning.
+5. Entra en `especializaciones/` cuando quieras profundizar en SQLite, Flask, Tkinter o machine learning.
