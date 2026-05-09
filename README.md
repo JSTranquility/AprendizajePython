@@ -1,75 +1,41 @@
-# Curso de Python
+# 🐍 Master en Python: De Cero a Especialista
 
-Repositorio personal de aprendizaje reorganizado por areas para que el material principal, las practicas y las especializaciones no queden mezcladas en la raiz.
+¡Bienvenido a tu ruta de aprendizaje definitiva! Este repositorio ha sido reestructurado para ofrecerte un camino lógico y profesional, eliminando el desorden y permitiéndote avanzar paso a paso.
 
-## Estructura
+---
 
-### `curso/`
+## 🗺️ Mapa de la Ruta (Learning Path)
 
-Material principal del curso.
+Sigue estas fases en orden para una formación completa:
 
-- `curso/modulos/`: teoria en orden
-- `curso/ejercicios/`: ejercicios base
-- `curso/proyectos/`: proyectos CLI del curso
-- `curso/recursos/`: guias y material de apoyo
-- `curso/soluciones/`: notas o soluciones
+### 🟢 [Fase 1: Fundamentos y Lógica](01_Fundamentos/)
+El inicio de todo. Variables, tipos de datos, estructuras de control y funciones básicas.
+> *Ideal para principiantes.*
 
-### `practicas/`
+### 🟡 [Fase 2: Python Intermedio y POO](02_Intermedio/)
+Avanza al siguiente nivel con Programación Orientada a Objetos, manejo de errores y módulos avanzados.
 
-Ejercicios y miniaplicaciones creadas fuera del recorrido principal del curso.
+### 🟠 [Fase 3: Dominio de Datos (SQL)](03_Bases_de_Datos/)
+Aprende a persistir información usando SQLite y MySQL. ¡Aquí es donde la magia de las aplicaciones reales comienza!
 
-- `practicas/consola/verificacion_usuarios/`
-- `practicas/consola/restaurante_menu/`
-- `practicas/consola/notas_escolares/`
-- `practicas/consola/general_practice.py`
+### 🔵 Fase 4: Especializaciones (Elige tu camino)
+Una vez dominas la base, puedes saltar a cualquiera de estas áreas:
+*   🌐 **[Web & Backend](04_Web_Backend/)**: Crea APIs y sitios web con Flask, FastAPI y Django.
+*   🖼️ **[Interfaces & Juegos](05_GUI_y_Juegos/)**: Desarrolla apps de escritorio (Tkinter, PyQt) o juegos (Pygame).
+*   🧪 **[Ciencia de Datos e IA](06_Data_Science_IA/)**: Análisis de datos, visualización y Redes Neuronales.
+*   🤖 **[Automatización y Visión](07_Automatizacion_y_Vision/)**: Bots de Telegram y procesamiento de imágenes con OpenCV.
 
-### `especializaciones/`
+---
 
-Contenido enfocado en temas concretos.
+## 🧪 [08 Laboratorio Práctico](08_Laboratorio_Practico/)
+Tu zona de juegos. Aquí encontrarás proyectos terminados, ejercicios de práctica general y soluciones a retos anteriores.
 
-- `especializaciones/sqlite/`: fundamentos, practicas y bases de datos
-- `especializaciones/roadmaps/`: rutas secundarias como Tkinter, Machine Learning y Flask
+---
 
-### `tools/`
+## 🛠️ Cómo usar este repositorio
+1. **No saltes etapas**: Si eres nuevo, empieza en la Fase 1.
+2. **Lee los README**: Cada carpeta tiene su propia guía con conceptos y desafíos.
+3. **Práctica constante**: No solo leas el código, ¡escríbelo!
 
-Scripts de apoyo para ejecutar o revisar material del repositorio.
-
-## Uso rapido
-
-Ejecutar un ejercicio del curso:
-
-```powershell
-python curso/ejercicios/01_fundamentos.py
-```
-
-Ejecutar el lote de ejercicios base:
-
-```powershell
-python tools/ejecutar_ejercicios.py
-```
-
-Ejecutar un proyecto del curso:
-
-```powershell
-python curso/proyectos/02_gestor_tareas.py
-```
-
-Ejecutar una practica personal:
-
-```powershell
-python practicas/consola/notas_escolares/main.py
-```
-
-Ejecutar una practica de SQLite:
-
-```powershell
-python especializaciones/sqlite/practicas/tienda_gaming/main.py
-```
-
-## Ruta recomendada
-
-1. Empieza por `curso/modulos/`.
-2. Resuelve `curso/ejercicios/` en orden.
-3. Pasa a `curso/proyectos/`.
-4. Usa `practicas/` para experimentar.
-5. Entra en `especializaciones/` cuando quieras profundizar en SQLite, Flask, Tkinter o machine learning.
+---
+> *Este curso está diseñado para enseñarte a pensar como programador, no solo a copiar código.*
