@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería - Inicio</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #a855f7;
+            --bg: #0f172a;
+            --text: #f8fafc;
+            --card-bg: #1e293b;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            padding: 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+        }
+
+        .nav {
+            margin-top: 1rem;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+
+        .nav a:hover {
+            opacity: 0.8;
+        }
+
+        main {
+            flex: 1;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cta-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s, border-color 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        .footer {
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Librería Mágica</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Inicio</a></li>
+                <li><a href="{{ url_for('index') }}">Catálogo Completo</a></li>
+                <li><a href="{{ url_for('categorias_lista') }}">Explorar Categorías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Tu próximo viaje comienza aquí</h2>
+            <p>Descubre miles de historias esperando ser contadas.</p>
+        </section>
+
+        <div class="cta-container">
+            <a href="{{ url_for('index') }}" class="card">
+                <h3>Ver Libros</h3>
+                <p>Explora todo nuestro catálogo disponible con los mejores precios.</p>
+            </a>
+            <a href="{{ url_for('categorias_lista') }}" class="card">
+                <h3>Categorías</h3>
+                <p>Filtra tus lecturas por género: Terror, Misterio, Novela y más.</p>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Librería Mágica. Creado con pasión por la lectura.</p>
+    </footer>
+</body>
+
+</html>

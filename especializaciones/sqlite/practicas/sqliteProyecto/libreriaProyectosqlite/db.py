@@ -169,13 +169,39 @@ def consultar_libros():
     cursor = conexion.cursor()
 
     cursor.execute('''
-        SELECT libros.titulo,
+        SELECT libros.id,
+               libros.titulo,
                libros.autor,
                libros.precio,
                categorias.categoria
         FROM libros
         JOIN categorias ON libros.categoria_id = categorias.id
     ''')
+    libros = cursor.fetchall()
+    conexion.close()
+    return libros
+
+def obtener_categorias():
+    conexion = obtener_conexion()
+    cursor = conexion.cursor()
+    cursor.execute('SELECT * FROM categorias')
+    categorias = cursor.fetchall()
+    conexion.close()
+    return categorias
+
+def consultar_libros_por_categoria(categoria_id):
+    conexion = obtener_conexion()
+    cursor = conexion.cursor()
+    cursor.execute('''
+        SELECT libros.id,
+               libros.titulo,
+               libros.autor,
+               libros.precio,
+               categorias.categoria
+        FROM libros
+        JOIN categorias ON libros.categoria_id = categorias.id
+        WHERE libros.categoria_id = ?
+    ''', (categoria_id,))
     libros = cursor.fetchall()
     conexion.close()
     return libros
@@ -201,15 +227,15 @@ def insertar_libros():
             "Libros insertados!"
         )    
 
-def eliminar_usuario(id):
+def eliminar_usuario(id=None):
+    if id is None:
+        id = input("ID del usuario a eliminar: ")
     conexion = obtener_conexion()
     cursor = conexion.cursor()
     cursor.execute('DELETE FROM usuarios WHERE id = ?', (id,))
     conexion.commit()
     conexion.close()
-    print(
-        "Usuario eliminado!"
-    )
+    print("Usuario eliminado!")
 
 
 def actualizar_usuarios():
@@ -224,8 +250,9 @@ def actualizar_usuarios():
     conexion.close()
     print("Usuario actualizado!")
 
-def eliminar_libro(id):
-    id = input("ID del libro a eliminar: ")
+def eliminar_libro(id=None):
+    if id is None:
+        id = input("ID del libro a eliminar: ")
     conexion = obtener_conexion()
     cursor = conexion.cursor()
     cursor.execute('DELETE FROM libros WHERE id = ?', (id,))
@@ -324,6 +351,9 @@ def menu_usuario():
             break
         else:
             print("Opción no válida")
+
+if __name__ == "__main__":
+    iniciar_sesion()
      
 
 
