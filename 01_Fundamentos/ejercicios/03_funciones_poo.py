@@ -1,8 +1,11 @@
 """
-Ejercicios de funciones y POO.
+Ejercicio 3: Funciones y POO
 
-Ejecuta:
-    python ejercicios/03_funciones_poo.py
+Objetivo: Poner en práctica la creación de funciones y el uso de Clases.
+
+Instrucciones:
+1. Analiza la clase `CuentaBancaria` y complétala.
+2. Ejecuta el archivo. Si todo está correcto, verás un mensaje de "Éxito".
 """
 
 

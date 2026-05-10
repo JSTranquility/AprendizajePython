@@ -11,3 +11,15 @@
 # 4. Muestra el resultado con un mensaje amigable.
 
 # --- ESCRIBE TU CÓDIGO ABAJO ---
+
+print("Hola, bienvenido a la app!")
+
+celsius = input("Por favor ingresa la temperatura en grados Celsius")
+
+celsius = float(celsius)
+
+fahrenheit = (celsius * 9/5) + 32
+
+print(f"La temperatura en grados Fahrenheit es:{fahrenheit}")
+
+
